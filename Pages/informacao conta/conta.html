@@ -22,7 +22,6 @@
 </head>
 
 <body class="bg-body-secondary">
-
     <nav class="navbar navbar-expand-lg bg-danger text-white d-none d-md-flex navbar-top p-3">
         <div class="container-fluid">
             <a href="/Pages/dashboard/dashboard.html">
@@ -33,11 +32,11 @@
                     <i class="bi bi-bar-chart custom-icon"></i>
                     <span class="text-nowrap">Informações Gerais</span>
                 </a>
-                <a href="#" class="text-light nav-link">
+                <a href="/Pages/calculadora/calculadora.html" class="text-light nav-link">
                     <i class="bi bi-calculator custom-icon"></i>
                     <span class="text-nowrap">Calculadora de Taxas</span>
                 </a>
-                <a href="#" class="text-light nav-link">
+                <a href="/Pages/informacao conta/conta.html" class="text-light nav-link">
                     <i class="bi bi-person custom-icon"></i>
                     <span class="text-nowrap">Perfil</span>
                 </a>
@@ -45,22 +44,28 @@
         </div>
     </nav>
 
-    <div class="d-flex justify-content-sm-center align-items-center pt-lg-4">
-        <hr class="flex-grow-1">
-        <span class="px-2 text-nowrap fs-3"> Minha Conta </span>
-        <hr class="flex-grow-1">
-    </div>
+    
 
-    <div class="container perfil text-center pt-4 pb-5">
+    <main class="text-center pt-4 pb-5">
+        <div class="d-flex justify-content-between align-items-center d-lg-none">
+            <a href="/Pages/dashboard/dashboard.html" class="bi bi-arrow-left text-danger custom-icon"></a>
+            <img class="me-2" src="/Assets/Images/logo-ifood-256.png" alt="logo ifood vermelho" width="70">
+          </div>
 
+        <div class="d-flex justify-content-sm-center align-items-center mb-3">
+            <hr class="flex-grow-1">
+            <span class="fs-3 px-3 text-nowrap">Minha Conta</span>
+            <hr class="flex-grow-1">
+        </div>  
+        
         <div class="row d-flex justify-content-center">
-            <div class="col-7 col-md-8 col-lg-6">
+            <div class="col-12 col-md-8 col-lg-6 mb-3">
                 <h4>Informações da conta</h4>
             </div>
         </div>
 
         <div class="row d-flex justify-content-center">
-            <div class="col-7 col-md-8 col-lg-6">
+            <div class="col-12 col-md-8 col-lg-6">
                 <div class="d-flex justify-content-between">
                     <p>Nome do estabelecimento</p>
                     <p>JSK</p>
@@ -70,17 +75,17 @@
         </div>
 
         <div class="row d-flex justify-content-center">
-            <div class="col-7 col-md-8 col-lg-6">
+            <div class="col-12 col-md-8 col-lg-6">
                 <div class="d-flex justify-content-between">
                     <p>Perfil de Acesso</p>
-                    <p>Dona da loja</p>
+                    <p>Dono da loja</p>
                 </div>
                 <hr>
             </div>
         </div>
 
         <div class="row d-flex justify-content-center">
-            <div class="col-7 col-md-8 col-lg-6">
+            <div class="col-12 col-md-8 col-lg-6">
                 <div class="d-flex justify-content-between">
                     <p>Email</p>
                     <p>josedasilva@hotmail.com</p>
@@ -90,7 +95,7 @@
         </div>
 
         <div class="row d-flex justify-content-center">
-            <div class="col-7 col-md-8 col-lg-6">
+            <div class="col-12 col-md-8 col-lg-6">
                 <div class="d-flex justify-content-between">
                     <p>Senha</p>
                     <p>***********</p>
@@ -100,12 +105,12 @@
         </div>
 
         <div class="row d-flex justify-content-center">
-            <div class="col-7 col-md-8 col-lg-6">
+            <div class="col-12 col-md-8 col-lg-6">
                 <h4 class="titulo">Informações do Estabelecimento</h4>
             </div>
         </div>
 
-        <div class="button-container">
+        <div class="row">
             <button class="btn">
                 <img src="../../Assets/Images/Botão_cardápio.png" alt="">
             </button>
@@ -126,20 +131,18 @@
                 <img src="../../Assets/Images/Botão_Formas_Pagamento.png" alt="">
             </button>
         </div>
-
-    </div>
-
-    </div>
-
+        <nav class="navbar bg-danger fixed-bottom d-md-none rounded-top-4">
+            <div class="container-fluid justify-content-around">
+              <a href="/Pages/infoGerais/infoGerais.html" class="text-light nav-link">
+                <i class="bi bi-clipboard2-data fixed-bottom-icons"></i>
+              </a>
+              <a href="/Pages/calculadora/calculadora.html" class="text-light nav-link">
+                <i class="bi bi-calculator fixed-bottom-icons"></i>
+              </a>
+              <a href="/Pages/informacao conta/conta.html" class="text-light nav-link">
+                <i class="bi bi-person fixed-bottom-icons"></i>
+              </a>
+            </div>
+        </nav>
 </body>
-
-<footer class="footer">
-    <div class="container">
-        <a href="#" class="footer-icon"><i class="bi bi-house-door-fill"></i></a>
-        <a href="#" class="footer-icon"><i class="bi bi-clipboard2-data-fill"></i></a>
-        <a href="#" class="footer-icon"><i class="bi bi-calculator-fill"></i></a>
-        <a href="#" class="footer-icon"><i class="bi bi-person-circle"></i></a>
-    </div>
-</footer>
-
 </html>

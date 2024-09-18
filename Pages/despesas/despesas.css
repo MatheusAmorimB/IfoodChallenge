@@ -12,6 +12,10 @@ html, body {
     overflow-x: hidden;
 }
 
+.fixed-bottom-icons {
+    font-size: 1.6rem;
+}
+
 .custom-icon {
     font-size: 2.2rem;
 }

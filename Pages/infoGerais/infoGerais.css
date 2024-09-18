@@ -12,6 +12,10 @@ html, body {
     overflow-x: hidden;
 }
 
+.fixed-bottom-icons {
+  font-size: 1.6rem;
+}
+
 .nav-link span {
   margin-left: 0.5em;
   font-size: 1rem;

@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'iFoodRCTextos';
+    src: url('/Assets/Fonts/iFoodRCTextos-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
-    font-family: "Inter", sans-serif;
+    font-family: 'iFoodRCTextos', sans-serif;
 }
 
 h4 {
@@ -14,23 +21,16 @@ img {
     max-height: 30vh;
 }
 
-.d-flex {
-    display: flex;
-}
-
 .justify-content-between {
     justify-content: space-between;
 }
 
-@media (max-width: 768px) {
-    .d-flex {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+hr {
+    color: #EA1D2C;
 }
 
-hr {
-    margin-top: -8px;
+.fixed-bottom-icons {
+    font-size: 1.6rem;
 }
 
 .button-container .btn {
@@ -66,9 +66,22 @@ hr {
     color: #ddd;
 }
 
-@media (max-width: 768px) {
-    .footer .container {
-       justify-content: space-around;
-    }
+.custom-icon {
+    font-size: 2.2rem;
 }
-
+  
+.fixed-bottom-icons {
+    font-size: 1.6rem;
+}
+  
+.nav-link span {
+    margin-left: 0.5em;
+    font-size: 1rem;
+}
+  
+.navbar-top a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}

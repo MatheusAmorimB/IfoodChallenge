@@ -19,6 +19,7 @@ window.onload = function() {
 
         if(senha !== confirmSenha) {
             alert("Senhas diferentes, verifique sua senha novamente!");
+            return;
         }
 
         saveToLocalStorage('nomeCompleto', nome);

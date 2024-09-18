@@ -1,0 +1,157 @@
+.container {
+    max-width: 850px;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    color: #EA1D2C;
+    font-weight: 600;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  .icon {
+    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  i {
+    color: #890019;
+  }
+
+  .icon-seta {
+    height: 50px;
+    width: 70px;
+    font-size: 2rem !important;
+    font-weight:900 !important;
+    color: #C4161A !important;
+  }
+
+  .bike {
+    font-size: 2.5rem;
+  }
+
+  .escolha{
+    background-color: #EA1D2C !important;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    height: 70px;
+    width: 200px;
+  }
+
+  .calculator .display {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+
+  .calculator .cifra{
+    color: #EA1D2C;
+  }
+
+  .calculator .teclas {
+    width: 100%;
+    height: 80px;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 50%;
+    margin: 10px 21px;
+    background-color: #EA1D2C !important;
+    color: white;
+  }
+  .calculator .calcular{
+    width: 100%;
+    height: 60px;
+    font-size: 1.5rem;
+    margin: 5px 0;
+    border-radius: 10px;
+    background-color: #EA1D2C !important;
+    color: white;
+  }
+  .result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  .botoes-calculadora {
+    margin-right: 50px;
+  }
+
+  .calcular {
+    margin-top: 25px;
+  }
+
+  /* Estilo do modal */
+.modal-content {
+    border: 2px solid #EA1D2C; 
+  }
+  
+  .modal-title, .modal-body {
+    color: #EA1D2C;
+  }
+  
+  .modal-footer .btn-primary {
+    background-color: #EA1D2C;
+    color: white;
+    border: none;
+  }
+  
+  .modal-footer .btn-primary:hover {
+    background-color: #C4161A;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .resultado-container{
+    margin-top: 20px;
+  }
+
+  .texto-resultado {
+    margin-left: 30px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+
+  .result {
+    width: 412px;
+    height: 250px;
+    background-color: #EA1D2C;
+    color: white;
+    padding: 20px 20px 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  .ajuste {
+    margin-bottom: -1px;
+  }
+
+  .menor{
+    font-size: 12px;
+    color: #ccc;
+    margin-top: -15px;
+  }
+  
+
+  

@@ -24,7 +24,7 @@ window.onload = function() {
 
         if (email.toLowerCase() === emailCadastrado.toLowerCase() && senha === senhaCadastrada) {
             alert("Login realizado com sucesso!");
-            window.location.href = '/Pages/dashboard.html';
+            window.location.href = '/Pages/dashboard/dashboard.html';
         } else {
             alert("Email ou senha incorretos.Tente novamente!")
         }

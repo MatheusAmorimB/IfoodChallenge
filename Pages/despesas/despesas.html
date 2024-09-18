@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Despesas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Pages/despesas/despesas.css">
+    <link rel="preload" href="/Assets/Fonts/iFoodRCTextos-Bold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body class="bg-body-secondary">
+    <nav class="navbar navbar-expand-lg bg-danger text-white d-none d-md-flex navbar-top p-3">
+        <div class="container-fluid">
+          <a href="/Pages/dashboard/dashboard.html">
+            <img src="/Assets/Images/ifood-logo-bran-gran-9800797 1.png" alt="Logo Ifood Branco" width="75px">
+          </a>
+          <div class="d-flex col-6 justify-content-evenly">
+            <a href="/Pages/infoGerais/infoGerais.html" class="text-light nav-link">
+              <i class="bi bi-bar-chart custom-icon"></i>
+              <span class="text-nowrap">Informações Gerais</span>
+              </a>
+            <a href="#" class="text-light nav-link">
+              <i class="bi bi-calculator custom-icon"></i>
+              <span class="text-nowrap">Calculadora de Taxas</span>
+            </a>
+            <a href="#" class="text-light nav-link">
+              <i class="bi bi-person custom-icon"></i>
+              <span class="text-nowrap">Perfil</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+    <main class="mx-3">
+        <div class="d-flex justify-content-between align-items-center d-lg-none">
+            <a href="/Pages/dashboard/dashboard.html" class="bi bi-arrow-left text-danger custom-icon"></a>
+            <img class="me-2" src="/Assets/Images/logo-ifood-256.png" alt="logo ifood vermelho" width="70">
+        </div>
+
+        <div class="d-flex justify-content-sm-center align-items-center pt-lg-4 mb-3">
+          <hr class="flex-grow-1">
+            <span class="px-2 text-nowrap fs-3">Histórico das Despesas</span>
+          <hr class="flex-grow-1">
+        </div>
+        <div class="bg-danger p-2 rounded-3 mb-3">
+          <h4 class="text-light fs-3">Despesas de Hoje</h4>
+            <table class="table table-striped">
+                <thead class="table-danger">
+                    <tr>
+                    <th>Data</th>
+                    <th>Valor</th>
+                    <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaDespesasHoje">
+
+                </tbody>
+            </table>
+        </div>
+        <h4 class="mt-5 text-danger fs-2">Despesas Acumuladas dos Dias Passados</h4>
+        <p>Voce pode clicar em cada bolinha no gráfico para visualizar o resultado geral do dia.</p>
+
+        <div class="chart-container">
+            <canvas id="despesaAcumuladaChart" width="100%" height="40%"></canvas>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/despesas.js"></script>
+</body>
+</html>

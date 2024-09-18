@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Pages/dashboard/dashboard.css">
+    <link rel="preload" href="/Assets/Fonts/iFoodRCTextos-Bold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body class="bg-body-secondary">
+  <!-- NavBar Tela Grande -->
+  <nav class="navbar navbar-expand-lg bg-danger text-white d-none d-md-flex navbar-top p-3">
+    <div class="container-fluid">
+      <a href="/Pages/dashboard/dashboard.html">
+        <img src="/Assets/Images/ifood-logo-bran-gran-9800797 1.png" alt="Logo Ifood Branco" width="75px">
+      </a>
+      <div class="d-flex col-6 justify-content-evenly">
+        <a href="/Pages/infoGerais/infoGerais.html" class="text-light nav-link">
+          <i class="bi bi-bar-chart custom-icon"></i>
+          <span class="text-nowrap">Informações Gerais</span>
+          </a>
+        <a href="#" class="text-light nav-link">
+          <i class="bi bi-calculator custom-icon"></i>
+          <span class="text-nowrap">Calculadora de Taxas</span>
+        </a>
+        <a href="#" class="text-light nav-link">
+          <i class="bi bi-person custom-icon"></i>
+          <span class="text-nowrap">Perfil</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="bg-body-secondary mx-3">
+    <img class="d-md-none ms-2" src="/Assets/Images/logo-ifood-256.png" alt="Logo Ifood vermelho" width="70">
+    <h2 class="text-danger text-center pt-3">Painel do Proprietário</h1>
+
+    <div class="d-flex justify-content-sm-center align-items-center">
+      <hr class="flex-grow-1">
+      <span class="px-2 fs-3 text-nowrap">Visão Geral</span>
+      <hr class="flex-grow-1">
+    </div>
+
+    <div class="mt-3 mb-5">
+      <div class="row">
+        <div class="col-4">
+          <div class="bg-success p-1 pt-3 text-center rounded-4 shadow">
+            <h5 class="text-light">Receitas</h5>
+            <p id="receitaGeral" class="text-light text-nowrap">R$ 0,00</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="bg-secondary p-1 pt-3 pe-1 text-center rounded-4 shadow">
+            <h5>Geral</h5>
+            <p id="valorGeral" class="text-dark text-nowrap">R$ 0,00</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="bg-danger p-1 pt-3 text-center rounded-4 shadow">
+            <h5 class="text-light">Despesas</h5>
+            <p id="despesaGeral" class="text-light text-nowrap">R$ 0,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <h4 class="fs-3">Históricos de transações</h4>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <a href="/Pages/receitas/receitas.html" class="btn btn-lg btn-success w-100 d-flex align-items-center justify-content-center shadow">
+            <i class="bi bi-cash-coin pe-2"></i>Receitas
+          </a>
+        </div>
+        
+        <div class="col-md-3 mb-3">
+          <a href="/Pages/despesas/despesas.html" class="btn btn-lg btn-danger w-100 d-flex align-items-center justify-content-center shadow">
+            <i class="bi bi-wallet2 pe-2"></i>Despesas
+          </a>
+        </div>
+      </div>  
+        <div class="col-md-3 mb-5 ms-custom">
+          <div class="col-12">
+          <a href="/Pages/geral/geral.html" class="btn btn-lg btn-secondary w-100 d-flex align-items-center justify-content-center shadow">
+            <i class="bi bi-bank pe-2"></i>Geral
+          </a>
+        </div>
+        </div>
+      
+    
+    <h5 class="fs-3 my-3">Item mais Pedido do Dia</h5>
+    <div class="custom-card mb-4 shadow">
+      <div class="d-flex align-items-center">
+        <img src="/Assets/Images/imageHamburguer.png" alt="Imagem Hamburguer" class="img-fluid rounded me-4" width="100">
+        <div class="my-2">
+          <h5>Wendy's Burger</h5>
+          <p class="mb-1">Quantidade: 36 pedidos</p>
+          <p class="mb-1">Região: Osasco, SP</p>
+          <i class="bi bi-star"></i>
+          4,5
+        </div>
+      </div>
+    </div>
+
+      <p class="mb-3 fs-3">Pedidos</p>
+      <div class="row mb-3">
+        <div class="mb-3 col-md-3">
+          <a class="btn btn-lg btn-danger w-100 d-flex align-items-center justify-content-center shadow">
+            <i class="bi bi-calendar-day me-2"></i>
+            Histórico diário
+          </a>
+        </div>
+        <div class="mb-3 col-md-3">
+          <button class="btn btn-lg btn-danger w-100 d-flex align-items-center justify-content-center shadow">
+            <i class="bi bi-calendar-month me-1"></i>
+            Histórico mensal
+          </button>
+        </div>
+      </div>
+
+    <h5 class="fs-3 my-2">Pedidos mais recentes</h5> 
+      <table class="table table-hover">
+        <thead class="table-danger">
+          <tr>
+            <th scope="col">Nº</th>
+            <th scope="col" class="text-nowrap">Descrição do pedido</th>
+            <th scope="col">Observações</th>
+            <th scope="col" class="d-none d-sm-table-cell">Valor</th>
+          </tr>
+        </thead>
+        <tbody class="text-nowrap">
+          <tr>
+            <td>1</td>
+            <td>Wendy's Burger</td>
+            <td>Sem cebola</td>
+            <td class="d-none d-sm-table-cell">R$ 43,50</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Double Cheddar</td>
+            <td>Molho extra</td>
+            <td class="d-none d-sm-table-cell">R$ 36,50</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Veggie Burger</td>
+            <td>Sem queijo</td>
+            <td class="d-none d-sm-table-cell">R$ 45,99</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Chicken Burger</td>
+            <td>Pão sem gergelim</td>
+            <td class="d-none d-sm-table-cell">R$ 44,50</td>
+          </tr>
+        </tbody>
+      </table>
+  </main>
+
+  <!-- Navbar fixa na parte inferior para telas menores -->
+  <nav class="navbar bg-danger fixed-bottom d-md-none rounded-top-4">
+    <div class="container-fluid justify-content-around">
+      <a href="/Pages/infoGerais/infoGerais.html" class="text-light nav-link">
+        <i class="bi bi-clipboard2-data fixed-bottom-icons"></i>
+      </a>
+      <a href="#" class="text-light nav-link">
+        <i class="bi bi-calculator fixed-bottom-icons"></i>
+      </a>
+      <a href="#" class="text-light nav-link">
+        <i class="bi bi-person fixed-bottom-icons"></i>
+      </a>
+    </div>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
